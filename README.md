@@ -62,6 +62,7 @@ You may want to refer to this project in the future when working on the project.
 -
 -
 -
+-
 
 Exercise Two - Add JSON support to the Concert service
 ----------
@@ -185,6 +186,8 @@ You should first disconnect from the H2 console, by clicking the `Disconnect` bu
 
 The POM for project `lab-jpa-database` includes a dependency on the H2 library. 
 
+-
+
 #### GitHub Classroom
 After you finishes all exercises and push all source code to the Github, please ensure that `GitHub Classroom Workflow` for autograding successfully runs without any errors. 
 
@@ -195,21 +198,3 @@ Useful resources for H2  include the H2 website:
 <http://www.h2database.com/html/main.html>
 
 From here, you can download the H2 Console for your own machines. The website also has useful information, e.g. the SQL grammar for H2.
-
-<h2>Assessment</h2>
-
-The marking of this lab will be based on your team repository as of Friday 2 April 1700hrs.
-
-Assessment will be performed by examining the commit logs and other
-information associated with your team repository.  You must demonstrate that
-you have engaged with the lab material and fully participated with the
-team. This means we expect to see non-trivial commits, with meaningful commit
-messages. As with past labs, we will be looking for evidence that there was
-cooperation and collaboration within the team. Examples including making
-useful commits, and commenting on actions by other team members.
-
-Marks will be allocated as follows (maximum of 2 marks, minimum of 0):
-
-- If any tests do not pass, 1 mark will be deducted from the possible score from all team members
-- Any member that we cannot find evidence of having contributed to the lab will have 2 marks deducted
-- If there is no `Team.md` file or it does not contain the relevant information, 1 mark will be deducted from all team members
