@@ -28,6 +28,7 @@ The POM is configured to build a WAR file, to run an embedded servlet container 
 
 -
 -
+-
 
 #### (b) Reflect on the project
 
@@ -49,8 +50,7 @@ A (non-exhaustive) list of questions to consider include:
 
 You may want to refer to this project in the future when working on the project. It shows additional HTTP message processing and how to work with generically-typed objects that are to be marshalled and unmarshalled.
 
-f
--
+
 -
 -
 -
@@ -114,6 +114,9 @@ Points to consider
 - What would you need to do to add support for another data format, e.g. XML?
 - What quality attribute is promoted by the way that JAX-RS manages data formats?
 
+-
+-
+-
 -
 -
 -
