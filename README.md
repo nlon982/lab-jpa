@@ -1,4 +1,4 @@
-Lab - Jackson & JPA
+Lab 04 - Jackson & JPA
 ==========
 
 Before you start
@@ -26,6 +26,9 @@ This is a multi-module Maven project, so following the usual process for importi
 
 The POM is configured to build a WAR file, to run an embedded servlet container that hosts the Web service, and to run the integration tests - just as for Lab 03. The integration tests should pass.
 
+-
+-
+
 #### (b) Reflect on the project
 
 Make sure you understand how the project works. The main difference between this project and the Parolee JAX-RS project from Lab03 is that this project leverages JAX-RS' capability to automate marshalling/unmarshalling to/from different data formats (in this case JSON through MessageBodyReader/Writer implementations that use Jackson). In addition it illustrates the DTO concept.
@@ -35,6 +38,7 @@ Points to consider
 
 A (non-exhaustive) list of questions to consider include:
 
+
 - How do we specify that web methods should produce / consume JSON?
 - How do we marshal / unmarshal objects not natively supported by Jackson?
 - We want to make some objects *immutable* (e.g. `Movement` and `GeoPosition` in this case). This necessitates the removal of any *setter* methods in those classes. How do we allow Jackson to unmarshal instances of these classes when it usually relies on setter methods?
@@ -42,7 +46,22 @@ A (non-exhaustive) list of questions to consider include:
 - In this project, identify an example of HATEOAS being employed?
 - How do we marshal / unmarshal generically-typed objects?
 
+
 You may want to refer to this project in the future when working on the project. It shows additional HTTP message processing and how to work with generically-typed objects that are to be marshalled and unmarshalled.
+
+f
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
 
 Exercise Two - Add JSON support to the Concert service
 ----------
@@ -72,6 +91,10 @@ Complete the following steps
 
 In changing the `@Produces` / `@Consumes` annotations, you can specify them at the class level (rather than on individual methods) if you wish - they then apply to all methods in the class. Also, it's good practice to use MIME typed constants rather than string literals, e.g:
 
+-
+-
+-
+
 ```java
 @Produces({
     javax.ws.rs.core.MediaType.APPLICATION_JSON,
@@ -90,6 +113,22 @@ Points to consider
 - How does the JAX-RS framework separate the concerns of resource representation from application logic?
 - What would you need to do to add support for another data format, e.g. XML?
 - What quality attribute is promoted by the way that JAX-RS manages data formats?
+
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+
 
 Exercise Three - Complete the Concert database application
 ----------
